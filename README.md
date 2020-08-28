@@ -12,3 +12,5 @@ run the following
 bash <(curl -s https://raw.githubusercontent.com/shepner/proxmox-pfsense/master/setup/create-vm.sh)
 ```
 
+[Disable Hardware Checksum Offloading](https://docs.netgate.com/pfsense/en/latest/virtualization/virtio-driver-support.html)
+
