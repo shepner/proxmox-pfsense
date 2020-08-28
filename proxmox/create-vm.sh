@@ -28,15 +28,4 @@ qm create $VMID \
   
 qm resize $VMID scsi0 8G # [resize disks](https://pve.proxmox.com/wiki/Resize_disks)
 
-# remove the image
-#rm /tmp/focal-server-cloudimg-amd64.img
-
-# shrink the disk image (SLOW)
-# https://pve.proxmox.com/wiki/Shrink_Qcow2_Disk_Files
-
-#DISKFILE=/mnt/nas/data2/vm/images/$VMID/vm-$VMID-disk-0.qcow2
-#mv $DISKFILE $DISKFILE.orig
-#qemu-img convert -O qcow2 -c $DISKFILE.orig $DISKFILE
-#rm $DISKFILE.orig
-
 qm start $VMID
