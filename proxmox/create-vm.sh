@@ -8,7 +8,7 @@
 # This will create a 1G disk of file and then logically resize it to to 256G but the file will remain at 1G until it fills.
 # This saves the need to shrink the file later on which dramatically speeds up the process
 
-VMID=300
+VMID=500
 qm create $VMID \
   --name fw01 \
   --sockets 1 \
